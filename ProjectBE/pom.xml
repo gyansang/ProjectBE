@@ -31,12 +31,7 @@
 	    <artifactId>hibernate-search-orm</artifactId>
 	    <version>5.10.5.Final</version>
 	</dependency>
-	
-	<dependency>
-	    <groupId>oracle</groupId>
-	    <artifactId>ojdbc6</artifactId>
-	    <version>11.2.0.4</version>
-    </dependency>
+
 	
 	</dependencies>
 </project>

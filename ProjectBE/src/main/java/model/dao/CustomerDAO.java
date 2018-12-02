@@ -57,7 +57,7 @@ public class CustomerDAO {
 	//Select Query
 	
 	
-	public List<Customer> getProducts()
+	/*public List<Customer> getProducts()
 	{
 		List<Customer> lp = null;
 		try 
@@ -72,7 +72,7 @@ public class CustomerDAO {
 		}
 		return lp;
 	}
-	
+	*/
 	//Delete QUery 
 	
 	/*public boolean deleteCustomer(c)

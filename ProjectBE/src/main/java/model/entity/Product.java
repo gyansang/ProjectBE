@@ -1,4 +1,4 @@
-package model.dao;
+package model.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,12 +8,9 @@ import javax.persistence.Id;
 public class Product {
 	
 	@Id
-	 
 	public int pId;
 	private String pName;
 	@Column(name="ProductName")
-	@Min(value=100)
-	@Max(value=100000)
 	private String pCost;
 	
 	public Product(int pId, String pName, String pCost) {
