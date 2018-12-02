@@ -1,15 +1,19 @@
-package model.entity;
+package model.dao;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
-
-import org.hibernate.annotations.Entity;
 
 @Entity
 public class Product {
 	
 	@Id
+	 
 	public int pId;
 	private String pName;
+	@Column(name="ProductName")
+	@Min(value=100)
+	@Max(value=100000)
 	private String pCost;
 	
 	public Product(int pId, String pName, String pCost) {

@@ -6,27 +6,27 @@ import org.hibernate.mapping.List;
 import org.hibernate.query.Query;
 
 import config.DbConfig;
-import model.entity.Product;
+import model.entity.Customer;
 
-public class ProductDAO {
+public class CustomerDAO {
 
 	private DbConfig db;
 	private Session sess;
 	private Transaction ts;
 	
-	public ProductDAO()
+	public CustomerDAO()
 	{
 		db = new DbConfig();
 		sess = db.getSess();
 	}
 	
-	public boolean insertProduct(Product p)
+	public boolean insertCustomer(Customer c)
 	{
 		boolean b = true;
 		try
 		{
 			ts = sess.beginTransaction();
-			sess.save(p);
+			sess.save(c);
 			ts.commit();
 			
 		}catch(Exception ex)
@@ -37,13 +37,13 @@ public class ProductDAO {
 		}
 		return b;
 	}
-	public boolean updateProduct(Product p)
+	public boolean updateProduct(Customer c)
 	{
 		boolean b = true;
 		try 
 		{
 			sess.beginTransaction();
-			sess.update(p);
+			sess.update(c);
 			sess.getTransaction().commit();
 		}
 		catch(Exception e)
@@ -57,14 +57,14 @@ public class ProductDAO {
 	//Select Query
 	
 	
-	public List getProducts()
+	public List<Customer> getProducts()
 	{
-		List lp = null;
+		List<Customer> lp = null;
 		try 
 		{
 			sess.beginTransaction();
-			Query<Product> q = sess.createQuery("from Product",Product.class);
-			q.getResultList();
+			Query<Customer> q = sess.createQuery("from Customer",Customer.class);
+			q.getResultList(q);
 		}
 		catch(Exception e)
 		{
@@ -75,13 +75,13 @@ public class ProductDAO {
 	
 	//Delete QUery 
 	
-	/*public boolean deleteProduct(p)
+	/*public boolean deleteCustomer(c)
 	{
 		boolean b = true;
 		try 
 		{
 			sess.beginTransaction();
-			sess.delete(p);
+			sess.delete(c);
 			sess.getTransaction().commit();
 		}
 		catch(Exception e)

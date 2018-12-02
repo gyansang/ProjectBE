@@ -9,5 +9,7 @@
 <property name=”hibernate.connection.username”>1234</property>
 <property name=”hibernate.connection.username”>1234</property>
 <mapping class="show_sql">true</mapping>
+<mapping class="model.entity.Product"/>
+<mapping class="model.entity.Customer"/>
 </sesision-factory>
 </hibernate-configuration>
