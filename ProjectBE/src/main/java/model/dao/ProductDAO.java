@@ -37,6 +37,9 @@ public class ProductDAO {
 		}
 		return b;
 	}
+	
+	// Update Product Method
+	
 	public boolean updateProduct(Product p)
 	{
 		boolean b = true;

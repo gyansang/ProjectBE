@@ -7,7 +7,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Product p1 = new Product(100, "Apple", "5000");
+        Product p1 = new Product(101, "Banana", "500");
         ProductDAO pd = new ProductDAO();
         boolean b = pd.insertProduct(p1);
         if (b)

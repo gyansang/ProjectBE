@@ -6,16 +6,16 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(value="Customer_Detail")
+@Table(name="Customer_Detail")
 public class Customer {
 	@Id
-	@
+	@Column(name="Customer_Id")
 	public int cId;
-	@Column(value="Customer_Age")
+	@Column(name="Customer_Age")
 	public int cAge;
-	@Column(value="Customer_Name")
+	@Column(name="Customer_Name")
 	public String cName;
-	@Column(value="Contact_Number")
+	@Column(name="Contact_Number")
 	public String cContact;
 	
 	

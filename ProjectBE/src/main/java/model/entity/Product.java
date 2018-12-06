@@ -10,7 +10,7 @@ public class Product {
 	@Id
 	public int pId;
 	private String pName;
-	@Column(name="ProductName")
+	@Column(name="Product_Cost")
 	private String pCost;
 	
 	public Product(int pId, String pName, String pCost) {
