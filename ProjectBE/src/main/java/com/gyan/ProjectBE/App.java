@@ -7,7 +7,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Product p1 = new Product(101, "Banana", "500");
+        Product p1 = new Product(102, "Orange", "10");
         ProductDAO pd = new ProductDAO();
         boolean b = pd.insertProduct(p1);
         if (b)
@@ -19,25 +19,25 @@ public class App
         	System.out.println("Product not inserted");
         }
         
-        // Update Query
+        //Update Query
         
-//        boolean u = pd.updateProduct(p1);
-//        if (u)
-//        {
-//        	System.out.println("Successfully inserted");
-//        }
-//        else 
-//        {
-//        	System.out.println("Product not inserted");
-//        }
+/*        boolean u = pd.updateProduct(p1);
+        if (u)
+        {
+        	System.out.println("Successfully inserted");
+        }
+        else 
+        {
+        	System.out.println("Product not inserted");
+        }*/
         
         // Retrieve Data from Database
         
-//        ProductDAO pd = new ProductDAO();
-//        List<Product> lp = pd.getProducts();
-//        for(Product p: lp)
-//        {
-//        	System.out.println(p.getpId() + " " + p.getpCost() +" "+p.getpName());
-//        }
+      /*  ProductDAO pd1 = new ProductDAO();
+        List<Product> lp = pd1.getProducts();
+        for(Product p: lp)
+        {
+        	System.out.println(p.getpId() + " " + p.getpCost() +" "+p.getpName());
+        }*/
     }
 }

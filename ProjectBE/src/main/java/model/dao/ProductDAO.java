@@ -38,7 +38,7 @@ public class ProductDAO {
 		return b;
 	}
 	
-	// Update Product Method
+	//Update Product Method
 	
 	public boolean updateProduct(Product p)
 	{
@@ -78,7 +78,7 @@ public class ProductDAO {
 	
 	//Delete QUery 
 	
-	/*public boolean deleteProduct(p)
+	public boolean deleteProduct(Product p)
 	{
 		boolean b = true;
 		try 
@@ -93,6 +93,6 @@ public class ProductDAO {
 			b = false;
 		}
 		return b;
-	}*/
+	}
 
 }

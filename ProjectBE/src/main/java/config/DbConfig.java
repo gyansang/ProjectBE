@@ -20,5 +20,4 @@ public class DbConfig {
 		sess = sf.openSession();
 		return sess;
 	}
-
 }

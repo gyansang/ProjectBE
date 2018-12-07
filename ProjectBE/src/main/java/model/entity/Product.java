@@ -37,5 +37,4 @@ public class Product {
 	public void setpCost(String pCost) {
 		this.pCost = pCost;
 	}
-
 }
