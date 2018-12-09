@@ -22,5 +22,6 @@
 	  <!--  Names the annotated entity class --> 
 			<mapping class="model.entity.Product"/>
 			<mapping class="model.entity.Customer"/>
+			<mapping class="model.entity.ProductDetail"/>
 	 </session-factory>
 </hibernate-configuration>

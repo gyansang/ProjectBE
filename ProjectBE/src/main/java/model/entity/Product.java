@@ -2,20 +2,23 @@ package model.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Product {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	public int pId;
 	private String pName;
 	@Column(name="Product_Cost")
 	private String pCost;
 	
-	public Product(int pId, String pName, String pCost) {
+	public Product(String pName, String pCost) {
 		super();
-		this.pId = pId;
+		//this.pId = pId;
 		this.pName = pName;
 		this.pCost = pCost;
 	}

@@ -7,6 +7,7 @@ import org.hibernate.query.Query;
 
 import config.DbConfig;
 import model.entity.Product;
+import model.entity.ProductDetail;
 
 public class ProductDAO {
 
@@ -20,13 +21,13 @@ public class ProductDAO {
 		sess = db.getSess();
 	}
 	
-	public boolean insertProduct(Product p)
+	public boolean insertProduct(ProductDetail pd)
 	{
 		boolean b = true;
 		try
 		{
 			ts = sess.beginTransaction();
-			sess.save(p);
+			sess.save(pd);
 			ts.commit();
 			
 		}catch(Exception ex)
@@ -34,6 +35,7 @@ public class ProductDAO {
 			ts.rollback();
 			b = false;
 			ex.printStackTrace();
+			System.out.println(ex);
 		}
 		return b;
 	}

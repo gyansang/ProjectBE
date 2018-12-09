@@ -2,8 +2,6 @@ package model.dao;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.mapping.List;
-import org.hibernate.query.Query;
 
 import config.DbConfig;
 import model.entity.Customer;
